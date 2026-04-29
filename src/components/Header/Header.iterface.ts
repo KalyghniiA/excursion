@@ -1,0 +1,1 @@
+export type ActiveItem ="none" | "affiche" | "tickets" | "contacts" | "history" | "gallery" | "plans";
