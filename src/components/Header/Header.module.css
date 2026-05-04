@@ -14,12 +14,6 @@
     align-items: center;
 }
 
-.logo {
-    text-transform: uppercase;
-    font-family: var(--second-family), sans-serif;
-    font-weight: 600;
-}
-
 .nav__list {
     display: flex;
     column-gap: 45px;

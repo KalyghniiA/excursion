@@ -3,6 +3,7 @@ import {Link} from "react-router-dom";
 import {useState} from "react";
 import type {ActiveItem} from "./Header.iterface.ts";
 import cn from "classnames";
+import {Logo} from "../Logo/Logo.tsx";
 
 export function Header() {
 	const [activeItem, setActiveItem] = useState<ActiveItem>("none");
@@ -14,7 +15,7 @@ export function Header() {
 	return (
 		<header className={styles.header}>
 			<div className={styles.container}>
-				<Link to={"/"} onClick={() => handleClick("none")} className={styles.logo}>Сайт концертно - экскурсионных программ</Link>
+				<Logo to={"/"} onClick={() => handleClick("none")} />
 				<nav className={styles.nav}>
 					<ul className={styles["nav__list"]}>
 						<li className={cn(styles["nav__list-item"],{[styles["nav__list-item--active"]]: activeItem === "affiche"})} onClick={() => handleClick("affiche")}>

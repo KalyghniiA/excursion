@@ -1,0 +1,38 @@
+.footer {
+    background-color: var(--color-2);
+    color: var(--color-1);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-top: auto;
+}
+
+.footer a {
+    color: var(--color-1);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.container {
+    max-width: 1296px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.title {
+    font-family: var(--second-family), sans-serif;
+    margin-bottom: 32px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 24px;
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+}
