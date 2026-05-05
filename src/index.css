@@ -2,6 +2,7 @@
     --color-1: white;
     --color-2: black;
     --color-3: #05b093;
+    --color-3-opacity: rgba(5, 176, 147, 0.8);
     --font-family: "Fira Sans";
     --second-family: "EB Garamond";
 }

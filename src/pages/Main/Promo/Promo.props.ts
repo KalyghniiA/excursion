@@ -1,4 +1,4 @@
-import type {Affiche} from "../../../interfaces/Affiche.interface.ts";
+import type {Affiche} from "../../../interfaces/IAffiche.interface.ts";
 
 export interface PromoProps {
     events: Affiche[];
