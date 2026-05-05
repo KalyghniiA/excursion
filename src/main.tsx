@@ -10,6 +10,7 @@ import {Contacts} from "./pages/Contacts/Contacts.tsx";
 import {History} from "./pages/History/History.tsx";
 import {Gallery} from "./pages/Gallery/Gallery.tsx";
 import {Plans} from "./pages/Plans/Plans.tsx";
+import {UI} from "./pages/UI/UI.tsx";
 
 const router = createBrowserRouter([
 	{
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
 			{
 				path: "/plans",
 				element: <Plans />
+			},
+			{
+				path: "/UI",
+				element: <UI />
 			}
 		]
 	}
