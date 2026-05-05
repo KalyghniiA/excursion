@@ -9,7 +9,8 @@ const mockEvents: Affiche[] = [
 		promo: "Посвящение Фрэнку Синатре.",
 		date: "2026-06-06",
 		genre: "Джаз",
-		posterUrl: "./assets/poster1.png",
+		posterUrl: "/public/poster1.png",
+		posterMainUrl: "/public/poster1-main.png",
 		start: "19:00",
 		rating: "6+"
 	},
@@ -19,7 +20,8 @@ const mockEvents: Affiche[] = [
 		promo: "Санкт-Петербургский камерный оркестр Olympic Orchestra",
 		date: "2026-06-30",
 		genre: "Классика",
-		posterUrl: "./assets/poster2.png",
+		posterUrl: "/public/poster2.png",
+		posterMainUrl: "/public/poster2.png",
 		start: "19:00"
 	}
 ];

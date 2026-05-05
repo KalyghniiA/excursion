@@ -5,7 +5,7 @@ import imgEmpty from "../../../assets/empty-img.png";
 
 export function Promo({events}: PromoProps) {
 
-	const posterUrl = events.length === 0 ? imgEmpty : events[0].posterUrl;
+	const posterUrl = events.length === 0 ? imgEmpty : events[0].posterMainUrl;
 
 	return (
 		<section className={styles.promo}>
@@ -18,7 +18,7 @@ export function Promo({events}: PromoProps) {
 						<li className={styles["promo__list-item"]}>
 							<Link to={"/"} className={styles.item}>
 								<img src={event.posterUrl} alt={event.name} className={styles["item__poster"]} />
-								<p className={styles["item__title"]}>event.name</p>
+								<p className={styles["item__title"]}>{event.name}</p>
 							</Link>
 						</li>
 					);

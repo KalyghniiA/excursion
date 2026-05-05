@@ -5,6 +5,7 @@ export interface Affiche {
     date: string;
     genre: string;
     posterUrl: string;
+    posterMainUrl: string;
     start?: string;
     rating?: string;
 }
