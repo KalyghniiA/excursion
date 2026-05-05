@@ -1,0 +1,33 @@
+.affiche {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 100px;
+    margin-bottom: 136px;
+}
+
+.header {
+    font-family: var(--second-family), sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 140%;
+    text-align: center;
+    color: #191919;
+}
+
+.calendar {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    font-family: var(--second-family), sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    color: #191919;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}

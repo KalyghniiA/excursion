@@ -1,4 +1,4 @@
-export interface Affiche {
+export interface IAffiche {
     id: string;
     name: string;
     promo: string;

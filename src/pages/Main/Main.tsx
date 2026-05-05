@@ -1,8 +1,10 @@
 import styles from "./Main.module.css";
 import {Promo} from "./Promo/Promo.tsx";
-import type {Affiche} from "../../interfaces/Affiche.interface.ts";
+import type {IAffiche} from "../../interfaces/IAffiche.interface.ts";
+import {Affiche} from "./Affiche/Affiche.tsx";
 
-const mockEvents: Affiche[] = [
+
+const mockEvents: IAffiche[] = [
 	{
 		id: "1",
 		name: "Антонио Вивальди. Времена года",
@@ -29,9 +31,8 @@ const mockEvents: Affiche[] = [
 export function Main() {
 	return (
 		<main className={styles.main}>
-			<div className={styles.container}>
-				<Promo events={mockEvents} />
-			</div>
+			<Promo events={mockEvents} />
+			<Affiche events={mockEvents} />
 		</main>
 	);
 }
