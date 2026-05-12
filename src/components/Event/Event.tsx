@@ -4,11 +4,11 @@ import GenreImg from "../../assets/genre.png";
 import StartTimeImg from "../../assets/start-time.png";
 import AgeImg from "../../assets/age.png";
 import {LinkUI} from "../LinkUI/LinkUI.tsx";
-import {getMonthName} from "../../helpers/translations.ts";
+import {getMonthNameToEvent} from "../../helpers/translations.ts";
 
 export function Event({eventData}:EventProps) {
 	const dateEvent: Date = new Date(eventData.date);
-	const month = getMonthName(dateEvent.getMonth());
+	const month = getMonthNameToEvent(dateEvent.getMonth());
 
 	return (
 		<article className={styles.container}>

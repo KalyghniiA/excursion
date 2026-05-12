@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 306px;
+}
+
+.img {
+    border-radius: 12px;
+    width: 306px;
+    height: 204px;
+    margin-bottom: 32px;
+}
+
+.title {
+    font-family: var(--second-family), sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    color: #191919;
+    margin-bottom: 24px;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #191919;
+    opacity: .75;
+}

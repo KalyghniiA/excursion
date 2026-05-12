@@ -1,5 +1,10 @@
 .main {
     max-width: 1296px;
-    margin: 0 auto;
+    margin: 0 auto 160px auto;
     padding-top: 60px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
 }

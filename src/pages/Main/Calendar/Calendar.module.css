@@ -1,0 +1,48 @@
+.container {
+    width: 526px;
+    border-radius: 12px;
+}
+
+.poster{
+    padding: 231px 24px 24px 24px;
+    background-image: url("@/assets/calendar-image.png");
+}
+
+.title {
+    font-family: var(--second-family), sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 140%;
+    color: #fff;
+}
+
+.calendar {
+    display: flex;
+    padding: 24px;
+    gap: 20px;
+    justify-content: space-between;
+    background: rgba(25, 25, 25, 0.05);
+    border-radius: 0 0 12px 12px;
+}
+
+.calendar__container-month {
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar__month {
+    font-family: var(--second-family), sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 140%;
+}
+
+.calendar__button-container {
+    display: flex;
+    gap: 8px;
+    margin-top: auto;
+}
+
+.calendar__button-container button:last-child svg {
+    transform: rotate(180deg);
+}
