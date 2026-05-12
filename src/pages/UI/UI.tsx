@@ -3,6 +3,7 @@ import type {IAffiche} from "../../interfaces/IAffiche.interface.ts";
 import {Event} from "../../components/Event/Event.tsx";
 import {LinkUI} from "../../components/LinkUI/LinkUI.tsx";
 import {ButtonUI} from "../../components/ButtonUI/ButtonUI.tsx";
+import {ButtonCalendarUI} from "../../components/ButtonCalendarUI/ButtonCalendarUI.tsx";
 
 
 const mockEvents: IAffiche =
@@ -24,6 +25,8 @@ export function UI() {
 			<LinkUI to={"/"}>Link</LinkUI>
 			<ButtonUI type={"button"}>Button</ButtonUI>
 			<Event eventData={mockEvents} />
+			<ButtonCalendarUI>1</ButtonCalendarUI>
+			<ButtonCalendarUI isActive={true}>2</ButtonCalendarUI>
 		</main>
 	);
 }

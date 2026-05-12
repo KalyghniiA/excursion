@@ -7,7 +7,7 @@ export function News({newsData}:{newsData: INews[]}) {
 
 	return (
 		<section className={styles.container}>
-			{newsData.map((news) => (<NewsBlock newsData={news} />))}
+			{newsData.map((news) => (<NewsBlock newsData={news} key={news.id}/>))}
 		</section>
 	);
 }

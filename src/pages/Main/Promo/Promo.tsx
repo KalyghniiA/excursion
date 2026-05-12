@@ -15,7 +15,7 @@ export function Promo({events}: PromoProps) {
 			<ul className={styles["promo__list"]}>
 				{events.map(event => {
 					return (
-						<li className={styles["promo__list-item"]}>
+						<li className={styles["promo__list-item"]} key={event.id}>
 							<Link to={"/"} className={styles.item}>
 								<img src={event.posterUrl} alt={event.name} className={styles["item__poster"]} />
 								<p className={styles["item__title"]}>{event.name}</p>

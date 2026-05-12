@@ -1,0 +1,29 @@
+.btn {
+    border: none;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    border-radius: 4px;
+    color: var(--color-1);
+    background-color:  rgba(25, 25, 25, 0.3);
+}
+
+.btn:hover {
+    background-color: var(--color-3);
+}
+
+.btn-active {
+    background-color: var(--color-3);
+}
+
+.btn-navigation {
+    box-sizing: border-box;
+    width: 48px;
+    height: 48px;
+    background-color: var(--color-3);
+    padding: 15px 21px;
+}
+
