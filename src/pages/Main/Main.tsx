@@ -4,6 +4,7 @@ import type {IAffiche} from "../../interfaces/IAffiche.interface.ts";
 import {Affiche} from "./Affiche/Affiche.tsx";
 import type {INews} from "../../interfaces/INews.interface.ts";
 import {News} from "./News/News.tsx";
+import {Calendar} from "./Calendar/Calendar.tsx";
 
 
 const mockEvents: IAffiche[] = [
@@ -52,6 +53,7 @@ export function Main() {
 			<Affiche events={mockEvents} />
 			<div className={styles["info-container"]}>
 				<News newsData={newsMock} />
+				<Calendar />
 			</div>
 		</main>
 	);
