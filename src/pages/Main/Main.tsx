@@ -5,6 +5,8 @@ import {Affiche} from "./Affiche/Affiche.tsx";
 import type {INews} from "../../interfaces/INews.interface.ts";
 import {News} from "./News/News.tsx";
 import {Calendar} from "./Calendar/Calendar.tsx";
+import type {IPreviews} from "../../interfaces/IPreviews.interface.ts";
+import {Previews} from "./Previews/Previews.tsx";
 
 
 const mockEvents: IAffiche[] = [
@@ -46,6 +48,26 @@ const newsMock: INews[] = [
 	}
 ];
 
+const mockPreviews: IPreviews[] = [
+	{
+		id: "1",
+		title: "«ВЕК имени СИНАТРЫ»",
+		date: "2026-06-06"
+	},
+	{
+
+		id: "2",
+		title: "«ВЕК имени СИНАТРЫ»",
+		date: "2026-06-06"
+	},
+	{
+
+		id: "3",
+		title: "«ВЕК имени СИНАТРЫ»",
+		date: "2026-06-06"
+	}
+];
+
 export function Main() {
 	return (
 		<main className={styles.main}>
@@ -55,6 +77,7 @@ export function Main() {
 				<News newsData={newsMock} />
 				<Calendar />
 			</div>
+			<Previews data={mockPreviews} />
 		</main>
 	);
 }
